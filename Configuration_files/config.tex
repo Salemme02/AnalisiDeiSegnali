@@ -1,0 +1,87 @@
+% Configuration package
+\usepackage[bottom=2.0cm,top=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\raggedbottom 
+
+% Create color RED_SST
+\definecolor{RED_SST}{rgb}{0.6,0.1,0.1}
+
+% Custom theorem environments
+\declaretheoremstyle[
+  headfont=\color{RED_SST}\normalfont\bfseries,
+  bodyfont=\color{black}\normalfont\itshape,
+]{colored}
+
+\captionsetup[figure]{labelfont={color=RED_SST}} % Set colour of the captions
+\captionsetup[table]{labelfont={color=RED_SST}} % Set colour of the captions
+\captionsetup[algorithm]{labelfont={color=RED_SST}} % Set colour of the captions
+
+\theoremstyle{colored}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+
+% Enhances the features of the standard "table" and "tabular" environments.
+\newcommand\T{\rule{0pt}{2.6ex}}
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}}
+
+% Algorithm description
+\newcounter{algsubstate}
+\renewcommand{\thealgsubstate}{\alph{algsubstate}}
+\newenvironment{algsubstates}{
+    \setcounter{algsubstate}{0}%
+    \renewcommand{\STATE}{%
+    \stepcounter{algsubstate}%
+    \Statex {\small\thealgsubstate:}\space}
+    }{}
+    
+% Custom theorem environment
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Custom itemize environment
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$-$}
+\setlist{nosep}
+
+% Create command for background pic
+\newcommand\BackgroundPic{% Adding background picture
+	\put(240,370){
+	    \parbox[b][\paperheight]{\paperwidth}{%
+	    \vfill
+		\centering
+		\transparent{0.1}
+		\includegraphics[width=0.14\paperwidth]{Images/logo_GB.png}%
+		\vfill}
+		}
+}
+
+% Set indentation
+\setlength\parindent{0pt}
+
+% Custom title commands
+\titleformat{\section}
+{\color{RED_SST}\normalfont\Large\bfseries}
+{\color{RED_SST}\thesection.}{1em}{}
+\titlespacing*{\section}
+{0pt}{3.3ex}{3.3ex}
+
+\titleformat{\subsection}
+{\color{RED_SST}\normalfont\large\bfseries}
+{\color{RED_SST}\thesubsection.}{1em}{}
+\titlespacing*{\subsection}
+{0pt}{3.3ex}{3.3ex}
+
+% Custom headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+      
+\fancyfoot{}
+\fancyfoot[C]{\thepage} % page
+\renewcommand{\headrulewidth}{0mm} % headrule width
+\renewcommand{\footrulewidth}{0mm} % footrule width
+
+\makeatletter
+\patchcmd{\headrule}{\hrule}{\color{black}\hrule}{}{} % headrule
+\patchcmd{\footrule}{\hrule}{\color{black}\hrule}{}{} % footrule
+\makeatother

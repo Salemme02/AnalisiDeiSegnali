@@ -1,0 +1,14 @@
+\begin{circuitikz}[scale=0.8]
+        \draw (0,0)  node[above]{A} coordinate(in) to[R=\SI{15}{\kohm}, o-*] ++(3,0) coordinate(corner-in)
+        to [C=\SI{10}{\uF}] ++(0,-2) % this -2 will fix the gnd line
+        node[ground](GND){};
+        \draw (in) to[open, v=$v_i(t)$] (in|-GND) node[ground]{};
+        \draw (corner-in) -- ++(1,0) node[op amp, anchor=+](opamp){\texttt{LM358}};
+        \draw (opamp.down) -- (opamp.down|-GND) node[ground]{};
+        \draw (opamp.up) -- ++(0,1) to[crossing, name=X] ++(0,1) node[vcc]{\SI{5}{V}};
+        \draw (opamp.-) -- ++(-1,0) |- (X.center)  -| (opamp.out);
+        \draw (opamp.out) to[short, *-] ++(0.5,0) coordinate(rload)
+        to[short, *-o] ++(1.5,0) coordinate(out) node[above]{B};
+        \draw (rload) to[R=\SI{1}{\kohm}] (rload|-GND) node[ground]{};
+        \draw (out) to[open, v^=$v_o(t)$] (out|-GND) node[ground]{};
+\end{circuitikz}

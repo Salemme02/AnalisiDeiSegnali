@@ -1,0 +1,31 @@
+\begin{circuitikz}[scale=0.8]
+       %\draw [help lines] (0,0) grid (5,5);
+
+    \draw (2,4) node[pmos, bulk](M1){};
+    \draw (2,1) node[nmos, bulk](M2){};
+
+    \node[ground](GND) at (2,0) {};    
+    \node[vcc](VCC) at (2,5) {\SI{5}{V}};
+    
+    \node[circ] (A) at (0,2.5) {};
+    \node[circ] (B) at (2,2.5) {};
+    \node[ocirc] (out) at (4,2.5) {};
+    \node[ocirc] (in) at (-1,2.5) {};
+    \draw (M1.S) to[short, *-] ++(1,0) |- (M1.bulk);
+    \draw (M2.S) to[short, *-] ++(1,0) |- (M2.bulk);
+    \draw (A) |- (M1.G);
+    \draw (A) |- (M2.G);
+    \draw (A) -- (in);    
+    
+    \draw (B) -- (M2.D);
+    \draw (B) -- (M1.D);
+    \draw (B) -- (out);
+    
+
+ %   \draw (A) to[short, *-o] (in);
+
+    
+    
+\end{circuitikz}
+
+
