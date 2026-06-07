@@ -18,6 +18,7 @@
 \usepackage{caption} % Coloured captions
 \usepackage{transparent}
 
+
 % STANDARD MATH PACKAGES
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -143,35 +144,6 @@
 \appendix
 \section{Appendice A\\ Strumentazione Utilizzata}
 
-\subsection{Alimentatore}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figure/Alimentatore.jpg}
-    \caption{Alimentatore DP832 Rigol}
-    \label{fig:Alimentatore}
-\end{figure}
-
-L'alimentatore è un importante strumento di laboratorio elettronico poiché consente ai ricercatori ed agli ingegneri di testare circuiti elettronici, dispositivi elettronici e componenti in modo sicuro e controllato, fornendo tensioni e correnti precise e regolabili.
-
-Gli alimentatori possono essere a tensione fissa o variabile, e possono fornire corrente continua (DC) o alternata (AC), a seconda delle specifiche del dispositivo e dei requisiti dell'applicazione. Inoltre, gli alimentatori possono essere portatili o montati su rack a seconda dell'uso previsto.
-
-Nel nostro laboratorio è presente l'alimentatore da banco a corrente continua portatile visibile in Figura~\ref{fig:Alimentatore}. Esso è costituito da 3 canali programmabili come segue:
-\begin{itemize}
-    \item {\bf CH1}: $\frac{30V}{3A}$ completamente indipendente;
-    \item {\bf CH2}: $\frac{30V}{3A}$ negativo in comune con il CH3;
-    \item {\bf CH3}: $\frac{5V}{3A}$ negativo in comune con il CH2;
-\end{itemize}
-
-
-\subsection{Multimetro}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figure/Multimetro.jpg}
-    \caption{Multimetro DM3058 Rigol.}
-    \label{fig:Multimetro}
-\end{figure}
-
-Un multimetro (pronuncia multìmetro, conosciuto anche come multitester o semplicemente tester) è uno strumento di misura di grandezze elettriche che integra diverse funzioni, definite "campi di misura", in un'unica unità. Si presenta come una scatola dotata di una finestra di lettura (quadrante analogico a indice mobile oppure display digitale), uno o più comandi posti sul pannello frontale e almeno due boccole elettriche a cui collegare le sonde di misura (cavetti di diverso colore, terminanti con puntali ad impugnatura isolata)\cite{WIKIPEDIA-Multimetro}.
 
 \subsection{Generatore di segnali}
 \begin{figure}[H]
@@ -189,12 +161,53 @@ Un multimetro (pronuncia multìmetro, conosciuto anche come multitester o sempli
     \label{fig:Oscilloscopio}
 \end{figure}
 
+\subsection{Componenti elettronici}
+\begin{figure}[htbp]
+    \centering
+    % Prima immagine
+    \subfloat[Breadboard\label{fig:breadboard}]{
+        \begin{minipage}[c]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/breadboard.png}
+        \end{minipage}
+    }
+    \hspace{1.5cm}
+    % Seconda immagine
+    \subfloat[Diodo\label{fig:diodo}]{
+        \begin{minipage}[c]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/diodo.png}
+        \end{minipage}
+    }
+    \caption{Componenti elettronici utilizzati per la costruzione dei circuiti.}
+    \label{fig:immagini_affiancate}
+\end{figure}
 
-\pagebreak
+\subsection{Cavetti}
+\begin{figure}[htbp]
+    \centering
+    % Prima immagine
+    \subfloat[Cavi coassiali a doppia punta\label{fig:caviRN}]{
+        \begin{minipage}[c]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/caviRossoNero.png}
+        \end{minipage}
+    }
+    \hspace{1.5cm}
+    % Seconda immagine
+    \subfloat[Cavo coassiale BNC\label{fig:cavo}]{
+        \begin{minipage}[c]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cavoBNC.png}
+        \end{minipage}
+    }
+    \caption{Cavetti utilizzati per collegare i componenti elettronici e per le misurazioni.}
+    \label{fig:cavi}
+\end{figure}
 
 \section{Appendix B\\ Corsi per la sicurezza effettuati}
 
-Lo studente dichiara di aver effettuato tutti i corsi della sicurezza che consentono l'utilizzo dei laboratori in cui ha svolto la propria attività.
+Gli studenti dichiarano di aver effettuato tutti i corsi della sicurezza che consentono l'utilizzo dei laboratori in cui hanno svolto la propria attività.
 
 \begin{itemize}
     \item Corso Sicurezza base;
@@ -204,53 +217,6 @@ Lo studente dichiara di aver effettuato tutti i corsi della sicurezza che consen
 
 \pagebreak
 
-\section{Appendix C\\ Grafici in file esterni TikZ}
-
-\subsection{Analisi di Fourier}
-
-
-\begin{figure}[H]
-    \centering
-    \subfloat[Esempio Fourier 1.\label{fig:Fourier1}]{
-        \input{Fourier}
-    }
-    \quad
-    \subfloat[Esempio Fourier 2.\label{fig:Fourier2}]{
-        \input{Fourier2}
-    }
-    \caption[]{Sviluppo di Fourier.}
-    \label{fig:Fourier}
-\end{figure}
-
-\subsection{Disegni vari}
-
-\begin{figure}[H]
-    \centering
-    \input{DisegniVari}
-    \caption{Disegni vari TikZ.}
-    \label{fig:DisegniVari}
-\end{figure}
-
-\subsection{Altro circuito}
-
-\begin{figure}[H]
-    \centering
-    \input{circuito2}
-    \caption{Altro esempio di circuito.}
-    \label{fig:Circuito2}
-\end{figure}
-
-\subsection{Multirate}
-
-\begin{figure}[H]
-    \centering
-    \input{Multirate}
-    \caption{Multirate cambio di frequenza. Decimazione.}
-    \label{fig:Multirate}
-\end{figure}
-
-
-\clearpage
 
 %-------------------------------------------------------------------------
 %	END OF YOUR DOCUMENT
