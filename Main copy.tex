@@ -123,13 +123,232 @@
 \newpage
 
 %-----------------------------------------------------------------------------
-% CAPITOLI
+% INTRODUCTION
 %-----------------------------------------------------------------------------
-\input{Chapters/Introduzione}
-\input{Chapters/Teoria}
-\input{Chapters/Esperimento}
-\input{Chapters/Conclusioni}
+\section{Introduzione}
+\label{sec:Introduzione}
 
+Questo è un file di esempio scritto in \LaTeX{}. Per creare una nuova sezione si possono usare i comandi:
+\begin{verbatim}
+\section{Titolo della sezione}
+\label{sec:sezioneX}
+\end{verbatim}
+il primo per creare la sezione e il suo titolo mentre il secondo per creare una label ad esso per eventuali riferimenti nel testo. I riferimenti verranno fatti utilizzando il comando:
+\begin{verbatim}
+\ref{sec:sezioneX}
+\end{verbatim}.
+
+Analogamente si possono creare sottosezioni usando:
+\begin{verbatim}
+\subsection{Titolo della sottosezione}
+\label{ssec:sottosezioneX}
+
+\subsubsection{Titolo della sottosottosezione}
+\label{sssec:sottosottosezioneX}
+\end{verbatim}.
+
+Volendo evitare la numerazione esplicita delle sezioni e sottosezioni si può usare il carattere "*" come segue:
+\begin{verbatim}
+\section*{Titolo della sezione}
+\end{verbatim}
+
+
+Per maggiori approfondimenti e dettagli su \LaTeX{} si può fare riferimento a \cite{oetiker1995not, kottwitz2015latex} oltre che allo svariato materiale presentein rete. 
+
+
+%-----------------------------------------------------------------------------
+% EQUATIONS
+%-----------------------------------------------------------------------------
+\section{Esempi di equazioni}
+\label{sec:eqs}
+Inseriamo qui un po' di esempi di equazioni varie tipo quelle di Maxwell:
+\begin{subequations}
+    \label{eq:maxwell}
+    \begin{align}[left=\empheqlbrace]
+    \nabla\cdot \bm{D} & = \rho, \label{eq:maxwell1} \\
+    \nabla \times \bm{E} +  \frac{\partial \bm{B}}{\partial t} & = \bm{0}, \label{eq:maxwell2} \\
+    \nabla\cdot \bm{B} & = 0, \label{eq:maxwell3} \\
+    \nabla \times \bm{H} - \frac{\partial \bm{D}}{\partial t} &= \bm{J}. \label{eq:maxwell4}
+    \end{align}
+\end{subequations}
+
+Del quale possiamo anche vederne il codice di seguito.
+
+\begin{verbatim}
+\begin{subequations}
+    \label{eq:maxwell}
+    \begin{align}[left=\empheqlbrace]
+    \nabla\cdot \bm{D} & = \rho, \label{eq:maxwell1} \\
+    \nabla \times \bm{E}+\frac{\partial \bm{B}}{\partial t} &=\bm{0}, \label{eq:maxwell2} \\
+    \nabla\cdot \bm{B} & = 0, \label{eq:maxwell3} \\
+    \nabla \times \bm{H} - \frac{\partial \bm{D}}{\partial t} &= \bm{J}. \label{eq:maxwell4}
+    \end{align}
+\end{subequations}
+\end{verbatim}
+
+La stessa si può fare anche con un singolo riferimento:
+\begin{equation}
+    \label{eq:maxwell_singlelabel}
+    \left\{
+    \begin{aligned}
+    \nabla\cdot \bm{D} & = \rho, \\
+    \nabla \times \bm{E} +  \frac{\partial \bm{B}}{\partial t} &= \bm{0},\\
+    \nabla\cdot \bm{B} & = 0, \\
+    \nabla \times \bm{H} - \frac{\partial \bm{D}}{\partial t} &= \bm{J}.
+    \end{aligned}
+    \right.
+\end{equation}
+
+\'E  possibile anche evitare i riferimenti alle equazioni come nelle seguenti:
+$$
+    Q(t)=C \cdot V \cdot (1-e^{-\frac{t}{RC}}) =C \cdot V \cdot (1-e^{-\frac{t}{\tau}})
+$$
+
+$$
+    i(t)=\frac{V}{R} \cdot e^{-\frac{t}{\tau}}
+$$
+
+$$
+    \int_{q_0}^{q} \frac{dq}{q} = -\int_{0}^{t} \frac{1}{R\cdot C}dt
+$$
+
+%-----------------------------------------------------------------------------
+% FIGURES, TABLES AND ALGORITHMS
+%-----------------------------------------------------------------------------
+\section{Figure, Tabelle and Algoritmi}
+
+
+\subsection{Figure}
+\label{subsec:figures}
+
+\begin{figure}
+    \centering
+        \input{circuito1}
+    \caption{Circuito TikZ.}
+    \label{fig:esempioCircuitoTikz}
+\end{figure}
+
+Per includere disegni e circuiti nel testo è possibile usare il pacchetto \texttt{TikZ} \cite{tikz} come in Figura~\ref{fig:esempioCircuitoTikz}, o includere un'immagine con il seguente comando:
+\begin{verbatim}
+\includegraphics[options]{filename.xxx}
+\end{verbatim}
+come in Figura~\ref{fig:esempioFigura1} e dove xxx è il formato, ad es. \verb|.png|, \verb|.jpg|, \verb|.eps|, \dots.
+
+Anche qui esiste un ambiente particolare per inserire le immagine e i vari riferimenti usato per i riferimenti alla Figura~\ref{fig:esempioFigura1} o alle Figure~\ref{fig:EsempioUno}~e~\ref{fig:EsempioDue}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figure/Figura1.png}
+    \caption{Prima figura di esempio.}
+    \label{fig:esempioFigura1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \subfloat[Esempio Uno.\label{fig:EsempioUno}]{
+        \includegraphics[width=0.45\textwidth]{Figure/Figura2.png}
+    }
+    \quad
+    \subfloat[Esempio Due.\label{fig:EsempioDue}]{
+        \includegraphics[width=0.45\textwidth]{Figure/Figura3.png}
+    }
+    \caption[]{Esempio composto.}
+    \label{fig:quadtree2}
+\end{figure}
+
+\subsection{Tabelle}
+\label{subsec:tabelle}
+
+Un esempio di una tabella e del suo relativo ambiente in Tabella~\ref{table:EsempioColorato}.
+
+\begin{table}[H]
+    \caption*{\textbf{Titolo di Tabella}}
+    \centering 
+    \begin{tabular}{|p{3em}| c c c |}
+    \hline
+    \rowcolor{RED_SST!40}
+     & \textbf{colonna 1} & \textbf{colonna 2} & \textbf{colonna 3} \T\B \\
+    \hline \hline
+    \textbf{riga 1} & 1 & 2 & 3 \T\B \\
+    \textbf{riga 2} & $\alpha$ & $\beta$ & $\gamma$ \T\B\\
+    \textbf{riga 3} & alpha & beta & gamma \B\\
+    \hline
+    \end{tabular}
+    \\[10pt]
+    \caption{Caption della tabella.}
+    \label{table:EsempioColorato}
+\end{table}
+
+
+
+\subsection{Algorithm}
+\label{subsec:Algorithm}
+
+In \LaTeX si possono scrivere Pseudo-algorithms (o procedure esecutive) con i pacchetti \texttt{algorithm} e \texttt{algorithmic}.
+
+Ottenendo qualcosa come nell'esempio dell'Algorithm~\ref{alg:var}.
+\begin{algorithm}[H]
+    \label{alg:example}
+    \caption{Nome dell'algoritmo}
+    \label{alg:var}
+    \label{protocol1}
+    \begin{algorithmic}[1]
+        \STATE Initial instructions
+        \FOR{$for-condition$}
+            \STATE{Some instructions}
+            \IF{$if-condition$}
+                \STATE{Some other instructions}
+            \ENDIF
+        \ENDFOR
+        \WHILE{$while-condition$}
+            \STATE{Some further instructions}
+        \ENDWHILE
+        \STATE Final instructions
+    \end{algorithmic}
+\end{algorithm} 
+
+\section{Ambienti di utilità generica}
+
+Esistono svariati ambienti per i teoremi, corollari e loro dimostrazioni.
+
+Elenchi puntati come i seguenti:
+\begin{itemize}
+    \item Primo 
+        \begin{itemize}
+            \item Caso A;
+            \item Caso B.
+        \end{itemize}
+    \item Secondo
+\end{itemize}
+o numerati:
+\begin{enumerate}
+    \item Primo 
+        \begin{enumerate}
+            \item Caso A;
+            \item Caso B.
+        \end{enumerate}
+    \item Secondo
+\end{enumerate}
+
+\section{Bibliography and citations}
+
+Nel file \verb|bibliography.bib| ci sono tutti i riferimenti bibliografici utilizzati nel lavoro e questi vengoni utilizzati utilizzando il comando \verb|\cite{}|
+\\
+
+La bibliografia e la lista delle reference sono generate automaticamente dal programma  BibTeX \cite{bibtex}.
+
+%-----------------------------------------------------------------------------
+% CONCLUSION
+%-----------------------------------------------------------------------------
+\section{Conclusioni}
+\color{black}
+Qui vengono riportate le conclusioni principali dell'attività di ricerca o studio e i possibili sviluppi futuri.
+
+%-----------------------------------------------------------------------------
+% ACKNOWLEDGEMENTS
+%-----------------------------------------------------------------------------
+\section*{Acknowledgements}
+Here you might want to acknowledge someone.
 
 
 %-----------------------------------------------------------------------------
@@ -251,7 +470,7 @@ Lo studente dichiara di aver effettuato tutti i corsi della sicurezza che consen
 
 
 \clearpage
-
+\tableofcontents
 %-------------------------------------------------------------------------
 %	END OF YOUR DOCUMENT
 %-------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  7 JUN 2026 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  7 JUN 2026 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,7 +991,7 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (Configuration_files/title_page.tex
-<Images/logo_doppio.png, id=86, 119.2455pt x 28.6671pt>
+<Images/logo_doppio.png, id=66, 119.2455pt x 28.6671pt>
 File: Images/logo_doppio.png Graphic file (type png)
 <use Images/logo_doppio.png>
 Package pdftex.def Info: Images/logo_doppio.png  used on input line 5.
@@ -1030,92 +1030,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--45
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
- [2]
-
-LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 139.
-
-
-LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 148.
-
-
-Package natbib Warning: Citation `oetiker1995not' on page 3 undefined on input line 156.
-
-
-Package natbib Warning: Citation `kottwitz2015latex' on page 3 undefined on input line 156.
-
-[3] (circuito1.tex
-\absvshift=\dimen371
-\absvshift=\dimen372
-)
-
-Package natbib Warning: Citation `tikz' on page 4 undefined on input line 231.
-
-<Figure/Figura1.png, id=156, 305.14pt x 287.0725pt>
-File: Figure/Figura1.png Graphic file (type png)
-<use Figure/Figura1.png>
-Package pdftex.def Info: Figure/Figura1.png  used on input line 241.
-(pdftex.def)             Requested size: 241.84843pt x 227.53821pt.
-<Figure/Figura2.png, id=157, 803.0pt x 481.8pt>
-File: Figure/Figura2.png Graphic file (type png)
-<use Figure/Figura2.png>
-Package pdftex.def Info: Figure/Figura2.png  used on input line 250.
-(pdftex.def)             Requested size: 217.66211pt x 130.595pt.
-<Figure/Figura3.png, id=158, 803.0pt x 481.8pt>
-File: Figure/Figura3.png Graphic file (type png)
-<use Figure/Figura3.png>
-Package pdftex.def Info: Figure/Figura3.png  used on input line 254.
-(pdftex.def)             Requested size: 217.66211pt x 130.595pt.
-[4 <./Figure/Figura1.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 292.
- [5 <./Figure/Figura2.png (PNG copy)> <./Figure/Figura3.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
-
- []
-
-
-Package natbib Warning: Citation `bibtex' on page 6 undefined on input line 338.
-
+ [2] (Chapters/Introduzione.tex) (Chapters/Teoria.tex) (Chapters/Esperimento.tex) (Chapters/Conclusioni.tex)
 No file Main.bbl.
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 144.
+
+<Figure/Alimentatore.jpg, id=108, 1505.625pt x 984.67876pt>
+File: Figure/Alimentatore.jpg Graphic file (type jpg)
+<use Figure/Alimentatore.jpg>
+Package pdftex.def Info: Figure/Alimentatore.jpg  used on input line 149.
+(pdftex.def)             Requested size: 241.84843pt x 158.16783pt.
+<Figure/Multimetro.jpg, id=110, 1493.58pt x 634.37pt>
+File: Figure/Multimetro.jpg Graphic file (type jpg)
+<use Figure/Multimetro.jpg>
+Package pdftex.def Info: Figure/Multimetro.jpg  used on input line 169.
+(pdftex.def)             Requested size: 241.84843pt x 102.7209pt.
+
+Package natbib Warning: Citation `WIKIPEDIA-Multimetro' on page 4 undefined on input line 174.
+
+<Figure/GenSeg.jpg, id=111, 777.90625pt x 356.33125pt>
+File: Figure/GenSeg.jpg Graphic file (type jpg)
+<use Figure/GenSeg.jpg>
+Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 179.
+(pdftex.def)             Requested size: 241.84843pt x 110.78233pt.
+[4
+
+ <./Figure/Alimentatore.jpg> <./Figure/Multimetro.jpg>]
+<Figure/Oscilloscopio.jpg, id=121, 1505.625pt x 809.0225pt>
+File: Figure/Oscilloscopio.jpg Graphic file (type jpg)
+<use Figure/Oscilloscopio.jpg>
+Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 187.
+(pdftex.def)             Requested size: 241.84843pt x 129.95238pt.
+ [5 <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 195.
+
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 363.
-
-<Figure/Alimentatore.jpg, id=205, 1505.625pt x 984.67876pt>
-File: Figure/Alimentatore.jpg Graphic file (type jpg)
-<use Figure/Alimentatore.jpg>
-Package pdftex.def Info: Figure/Alimentatore.jpg  used on input line 368.
-(pdftex.def)             Requested size: 241.84843pt x 158.16783pt.
-<Figure/Multimetro.jpg, id=207, 1493.58pt x 634.37pt>
-File: Figure/Multimetro.jpg Graphic file (type jpg)
-<use Figure/Multimetro.jpg>
-Package pdftex.def Info: Figure/Multimetro.jpg  used on input line 388.
-(pdftex.def)             Requested size: 241.84843pt x 102.7209pt.
-
-Package natbib Warning: Citation `WIKIPEDIA-Multimetro' on page 7 undefined on input line 393.
-
-<Figure/GenSeg.jpg, id=208, 777.90625pt x 356.33125pt>
-File: Figure/GenSeg.jpg Graphic file (type jpg)
-<use Figure/GenSeg.jpg>
-Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 398.
-(pdftex.def)             Requested size: 241.84843pt x 110.78233pt.
-[7
-
- <./Figure/Alimentatore.jpg> <./Figure/Multimetro.jpg>]
-<Figure/Oscilloscopio.jpg, id=216, 1505.625pt x 809.0225pt>
-File: Figure/Oscilloscopio.jpg Graphic file (type jpg)
-<use Figure/Oscilloscopio.jpg>
-Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 406.
-(pdftex.def)             Requested size: 241.84843pt x 129.95238pt.
- [8 <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 414.
-
-[9]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 426.
+(hyperref)                removing `\\' on input line 207.
 
 (Fourier.tex
 \pgf@layerbox@axis background=\box100
@@ -1139,17 +1095,19 @@ Package pgfplots info on input line 11: Setting layers 'axis background,axis gri
 Package pgfplots info on input line 11: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
 ) (DisegniVari.tex) (circuito2.tex) (Multirate.tex
 Package pgfplots info on input line 11: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
-) [10] [11] (Main.toc)
-\tf@toc=\write7
-\openout7 = `Main.toc'.
+) [7] [8]
 
+Package caption Warning: Unused \captionsetup[table] on input line 15.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[algorithm] on input line 16.
+See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-[12
-
-] (Main.aux)
+(Main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -1160,20 +1118,20 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.4641pt have occurred.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 7DD720BD1F33A274B74531BC4FEA9656;3001.
+(rerunfilecheck)             Checksum: B843183A8E6F74D9D74140A7DD53DCF5;2275.
  ) 
 Here is how much of TeX's memory you used:
- 65183 strings out of 467683
- 1664109 string characters out of 5414722
- 2679390 words of memory out of 5000000
- 93408 multiletter control sequences out of 15000+600000
- 650238 words of font info for 92 fonts, out of 8000000 for 9000
+ 64513 strings out of 467683
+ 1648572 string characters out of 5414722
+ 2663053 words of memory out of 5000000
+ 92776 multiletter control sequences out of 15000+600000
+ 646276 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,18n,108p,880b,2133s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Main.pdf (12 pages, 1004930 bytes).
+ 98i,11n,108p,880b,2129s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Main.pdf (8 pages, 712258 bytes).
 PDF statistics:
- 798 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 524 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
