@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  7 JUN 2026 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  7 JUN 2026 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -890,7 +890,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen367
 \Gm@layoutvoffset=\dimen368
 \Gm@dimlist=\toks65
- (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+ (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
 \c@theorem=\count410
 \c@proposition=\count411
 \c@algsubstate=\count412
@@ -1030,45 +1032,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--45
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
- [2] (Chapters/Introduzione.tex) (Chapters/Teoria.tex) (Chapters/Esperimento.tex) (Chapters/Conclusioni.tex)
+ [2] (Chapters/Introduzione.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--18
+
+ []
+
+[3]) (Chapters/Teoria.tex [4]) (Chapters/Esperimento.tex [5]) (Chapters/Conclusioni.tex [6])
 No file Main.bbl.
-[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 144.
 
-<Figure/Alimentatore.jpg, id=108, 1505.625pt x 984.67876pt>
+<Figure/Alimentatore.jpg, id=121, 1505.625pt x 984.67876pt>
 File: Figure/Alimentatore.jpg Graphic file (type jpg)
 <use Figure/Alimentatore.jpg>
 Package pdftex.def Info: Figure/Alimentatore.jpg  used on input line 149.
 (pdftex.def)             Requested size: 241.84843pt x 158.16783pt.
-<Figure/Multimetro.jpg, id=110, 1493.58pt x 634.37pt>
+<Figure/Multimetro.jpg, id=123, 1493.58pt x 634.37pt>
 File: Figure/Multimetro.jpg Graphic file (type jpg)
 <use Figure/Multimetro.jpg>
 Package pdftex.def Info: Figure/Multimetro.jpg  used on input line 169.
 (pdftex.def)             Requested size: 241.84843pt x 102.7209pt.
 
-Package natbib Warning: Citation `WIKIPEDIA-Multimetro' on page 4 undefined on input line 174.
+Package natbib Warning: Citation `WIKIPEDIA-Multimetro' on page 7 undefined on input line 174.
 
-<Figure/GenSeg.jpg, id=111, 777.90625pt x 356.33125pt>
+[7
+
+ <./Figure/Alimentatore.jpg> <./Figure/Multimetro.jpg>]
+<Figure/GenSeg.jpg, id=133, 777.90625pt x 356.33125pt>
 File: Figure/GenSeg.jpg Graphic file (type jpg)
 <use Figure/GenSeg.jpg>
 Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 179.
 (pdftex.def)             Requested size: 241.84843pt x 110.78233pt.
-[4
-
- <./Figure/Alimentatore.jpg> <./Figure/Multimetro.jpg>]
-<Figure/Oscilloscopio.jpg, id=121, 1505.625pt x 809.0225pt>
+<Figure/Oscilloscopio.jpg, id=134, 1505.625pt x 809.0225pt>
 File: Figure/Oscilloscopio.jpg Graphic file (type jpg)
 <use Figure/Oscilloscopio.jpg>
 Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 187.
 (pdftex.def)             Requested size: 241.84843pt x 129.95238pt.
- [5 <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg>]
+ [8 <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 195.
 
-[6]
+[9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 207.
@@ -1095,13 +1116,13 @@ Package pgfplots info on input line 11: Setting layers 'axis background,axis gri
 Package pgfplots info on input line 11: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
 ) (DisegniVari.tex) (circuito2.tex) (Multirate.tex
 Package pgfplots info on input line 11: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
-) [7] [8]
+) [10] [11]
 
-Package caption Warning: Unused \captionsetup[table] on input line 15.
+Package caption Warning: Unused \captionsetup[table] on input line 20.
 See the caption package documentation for explanation.
 
 
-Package caption Warning: Unused \captionsetup[algorithm] on input line 16.
+Package caption Warning: Unused \captionsetup[algorithm] on input line 21.
 See the caption package documentation for explanation.
 
 
@@ -1121,17 +1142,17 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: B843183A8E6F74D9D74140A7DD53DCF5;2275.
  ) 
 Here is how much of TeX's memory you used:
- 64513 strings out of 467683
- 1648572 string characters out of 5414722
- 2663053 words of memory out of 5000000
- 92776 multiletter control sequences out of 15000+600000
+ 64558 strings out of 467683
+ 1649519 string characters out of 5414722
+ 2663453 words of memory out of 5000000
+ 92814 multiletter control sequences out of 15000+600000
  646276 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,11n,108p,880b,2129s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,108p,880b,2129s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Main.pdf (8 pages, 712258 bytes).
+Output written on Main.pdf (11 pages, 718093 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

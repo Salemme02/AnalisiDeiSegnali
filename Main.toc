@@ -1,17 +1,17 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Introduzione e Obiettivi}{3}{section.1}%
-\contentsline {section}{\numberline {2}Cenni Teorici}{3}{section.2}%
-\contentsline {section}{\numberline {3}Esperimento}{3}{section.3}%
-\contentsline {section}{\numberline {4}Conclusioni}{3}{section.4}%
-\contentsline {section}{\numberline {A}Appendice A\\ Strumentazione Utilizzata}{4}{section.A}%
-\contentsline {subsection}{\numberline {A.1}Alimentatore}{4}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Multimetro}{4}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Generatore di segnali}{5}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Oscilloscopio}{5}{subsection.A.4}%
-\contentsline {section}{\numberline {B}Appendix B\\ Corsi per la sicurezza effettuati}{6}{section.B}%
-\contentsline {section}{\numberline {C}Appendix C\\ Grafici in file esterni TikZ}{7}{section.C}%
-\contentsline {subsection}{\numberline {C.1}Analisi di Fourier}{7}{subsection.C.1}%
-\contentsline {subsection}{\numberline {C.2}Disegni vari}{7}{subsection.C.2}%
-\contentsline {subsection}{\numberline {C.3}Altro circuito}{7}{subsection.C.3}%
-\contentsline {subsection}{\numberline {C.4}Multirate}{8}{subsection.C.4}%
+\contentsline {section}{\numberline {2}Cenni Teorici}{4}{section.2}%
+\contentsline {section}{\numberline {3}Esperimento}{5}{section.3}%
+\contentsline {section}{\numberline {4}Conclusioni}{6}{section.4}%
+\contentsline {section}{\numberline {A}Appendice A\\ Strumentazione Utilizzata}{7}{section.A}%
+\contentsline {subsection}{\numberline {A.1}Alimentatore}{7}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Multimetro}{7}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Generatore di segnali}{8}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Oscilloscopio}{8}{subsection.A.4}%
+\contentsline {section}{\numberline {B}Appendix B\\ Corsi per la sicurezza effettuati}{9}{section.B}%
+\contentsline {section}{\numberline {C}Appendix C\\ Grafici in file esterni TikZ}{10}{section.C}%
+\contentsline {subsection}{\numberline {C.1}Analisi di Fourier}{10}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Disegni vari}{10}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Altro circuito}{10}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}Multirate}{11}{subsection.C.4}%
