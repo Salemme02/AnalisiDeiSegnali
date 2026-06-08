@@ -2,11 +2,14 @@
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Introduzione e Obiettivi}{3}{section.1}%
 \contentsline {section}{\numberline {2}Cenni Teorici}{4}{section.2}%
-\contentsline {section}{\numberline {3}Esperimento}{5}{section.3}%
-\contentsline {section}{\numberline {4}Conclusioni}{6}{section.4}%
-\contentsline {section}{\numberline {A}Appendice A\\ Strumentazione Utilizzata}{7}{section.A}%
-\contentsline {subsection}{\numberline {A.1}Generatore di segnali}{7}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Oscilloscopio}{7}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Componenti elettronici}{7}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Cavetti}{8}{subsection.A.4}%
-\contentsline {section}{\numberline {B}Appendix B\\ Corsi per la sicurezza effettuati}{8}{section.B}%
+\contentsline {subsection}{\numberline {2.1}Trasformata di Fourier}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Modulazione AM e Demodulazione}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Filtri}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Esperimento}{4}{section.3}%
+\contentsline {section}{\numberline {4}Conclusioni}{5}{section.4}%
+\contentsline {section}{\numberline {A}Appendice A\\ Strumentazione Utilizzata}{6}{section.A}%
+\contentsline {subsection}{\numberline {A.1}Generatore di segnali}{6}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Oscilloscopio}{6}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Componenti elettronici}{6}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Cavetti}{7}{subsection.A.4}%
+\contentsline {section}{\numberline {B}Appendix B\\ Corsi per la sicurezza effettuati}{7}{section.B}%
