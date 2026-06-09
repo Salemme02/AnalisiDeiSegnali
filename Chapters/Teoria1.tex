@@ -3,7 +3,62 @@
 \thispagestyle{plain}
 In questa sezione vengono riportati alcuni cenni teorici sui concetti fondamentali dell'analisi dei segnali, che sono stati utilizzati durante lo sviluppo del progetto. Verranno trattati argomenti come la rappresentazione dei segnali, la trasformata di Fourier, il campionamento e la ricostruzione dei segnali, nonché alcune tecniche di filtraggio e analisi spettrale. Questi concetti forniscono le basi teoriche necessarie per comprendere le operazioni svolte sui segnali durante l'esperimento e per interpretare i risultati ottenuti.
 
-
 \subsection{Trasformata di Fourier}
+Per poter analizzare ed elaborare i segnali, bisogna spesso ricorrere ad una loro rappresentazione alternativa, che permetta di evidenziare alcune caratteristiche che non sono immediatamente visibili nella rappresentazione temporale. La trasformata di Fourier è uno strumento matematico che consente di rappresentare un segnale come somma di sinusoidi di frequenze diverse, fornendo così una rappresentazione in frequenza del segnale stesso. 
 
+\subsubsection{DFS: Discrete Fourier Series}
+La Trasformata di Fourier è definita per segnali continui, ma nella pratica si lavora con segnali discreti, campionati ad intervalli regolari. La Discrete Fourier Seriers (DFS) è una verisione discreta della trasformata Serie di Fourier, che permette di rappresentare una sequenza di campioni periodica come somma finita di armoniche complesse. La DFS è definita come segue:
+
+\begin{equation}
+    \label{sec:DFS}
+    X[k] = \sum_{n=0}^{N-1} x[n] e^{-j \frac{2\pi}{N} kn}
+\end{equation}
+dove $x[n]$ è la sequenza di campioni del segnale, $N$ è il numero totale di campioni (per gli oscilloscopi generalmente 1024) e $X[k]$ è la componente in frequenza corrispondente alla frequenza $k$.
+
+\subsubsection{DFT: Discrete Fourier Transform}
+La Discrete Fourier Transform (DFT) è una generalizzazione della DFS che permette di rappresentare una sequenza di campioni non necessariamente periodica. La DFT è definita come segue:
+
+\begin{equation}
+    \label{sec:DFT}
+    X[k] = \begin{cases}
+    \sum_{n=0}^{N-1} x[n] e^{-j \frac{2\pi}{N} kn} & \text{se } 0 \leq k < N\\
+    0 & \text{altrimenti}
+    \end{cases}
+\end{equation}
+dove $x[n]$ è la sequenza di campioni del segnale, $N$ è il numero totale di campioni (per gli oscilloscopi generalmente 1024) e $X[k]$ è la componente in frequenza corrispondente alla frequenza $k$.
+
+\subsubsection{FFT: Fast Fourier Transform}
+Dall'equazione \ref{sec:DFT}, si può notare che il calcolo della DFT per una singola frequenza $k$ richiede sommare $N$ prodotti, e quindi il calcolo della DFT per tutte le frequenze ha una complessità di \textbf{$O(N^2)$} operazioni. Considerando che negli oscilloscopi si lavora generalmente con $N=1024$ campioni, il calcolo diretto della DFT sarebbe particolarmente oneroso. 
+
+Per superare questo limite prestazionale, si ricorre alla \textbf{Fast Fourier Transform (FFT)}. Non si tratta di una nuova definizione matematica rispetto alla DFT, ma di una classe di algoritmi altamente ottimizzati per il suo calcolo. 
+
+L'algoritmo più noto (introdotto da Cooley e Tukey) sfrutta le proprietà di simmetria e periodicità dell'esponenziale complesso e utilizza un approccio di tipo \textit{divide et impera} (divide and conquer). Se il numero di campioni $N$ è una potenza di 2 (come è tipico nelle architetture digitali e negli oscilloscopi), l'algoritmo suddivide iterativamente il calcolo della trasformata di lunghezza $N$ in trasformate di lunghezza decrescente (pari e dispari).
+
+Questa scomposizione abbatte drasticamente il numero di moltiplicazioni e addizioni necessarie, riducendo la complessità computazionale da $O(N^2)$ a $O(N \log_2 N)$. 
+
+Per comprendere l'impatto pratico di questa ottimizzazione, riprendiamo l'esempio dell'oscilloscopio che elabora $N = 1024$ campioni:
+\begin{itemize}
+    \item \textbf{Con la DFT diretta:} sarebbero necessarie circa 1.048.576 operazioni ($1024^2$).
+    \item \textbf{Con l'algoritmo FFT:} sono sufficienti solamente 10.240 operazioni ($1024 \times 10$).
+\end{itemize}
+
+Questo abbattimento del carico computazionale (un fattore di riduzione di circa 100 volte in questo caso specifico) è l'elemento chiave che permette alla strumentazione di laboratorio e ai moderni calcolatori di eseguire l'analisi spettrale e la visualizzazione dei segnali in tempo reale.
+
+\subsubsection{Considerazioni pratiche sull'uso della FFT all'oscilloscopio}
+
+Nell'utilizzo dell'oscilloscopio per la FFT, bisogna bilanciare due aspetti cruciali: la risoluzione in frequenza e il limite di fondo scala. Dato che lo strumento elabora un numero fisso di campioni (generalmente $N = 1024$), modificare la scala dei tempi altera direttamente la frequenza di campionamento ($f_c$). 
+
+La durata complessiva della finestra temporale è definita come:
+$$T = \frac{N}{f_c}$$
+
+Se allarghiamo la finestra temporale per includere più oscillazioni del segnale (aumentando $T$), lo strumento è costretto a campionare più lentamente (diminuendo $f_c$). Questo comporta due conseguenze pratiche:
+
+\begin{itemize}
+    \item \textbf{Aumento della risoluzione in frequenza:} La distanza $\Delta f$ tra i campioni nello spettro è data da $\Delta f = \frac{1}{T} = \frac{f_c}{N}$. Aumentando il tempo di osservazione $T$, il passo $\Delta f$ si riduce, permettendo di distinguere con maggiore precisione le singole componenti in frequenza (es. le delta di Dirac).
+    
+    \item \textbf{Riduzione del fondo scala:} Per il teorema del campionamento di Nyquist, la frequenza massima osservabile senza errori di \textit{aliasing} è limitata alla metà della frequenza di campionamento: $f_{max} = \frac{f_c}{2}$. Pertanto, abbassando $f_c$ per migliorare la risoluzione, si restringe inevitabilmente la banda totale visualizzabile.
+\end{itemize}
 \input{Chapters/Teoria2.tex}
+ 
+
+\pagebreak
