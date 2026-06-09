@@ -10,9 +10,26 @@ La modulazione in ampiezza è una tecnica fondamentale nelle telecomunicazioni, 
 La demodulazione, invece, è il processo inverso che permette di estrarre il segnale informativo originale dal segnale modulato ricevuto.
 \newline
 \newline
-Questa tecnica è ampiamente utilizzata in vari contesti, come la trasmissione radio, televisiva e nelle comunicazioni wireless, permettendo di definire degli intervalli di frequenza specifici per la trasmissione dei segnali, riducendo le interferenze e migliorando la qualità della comunicazione.
+Questa tecnica è ampiamente utilizzata in vari contesti, come la trasmissione radio, televisiva, nelle comunicazioni wireless e nelle telecomunicazioni satellitari, permettendo di definire degli intervalli di frequenza specifici per la trasmissione dei segnali, riducendo le interferenze e migliorando la qualità della comunicazione.
 \newline
+\vspace{0.3cm}
+\noindent\textit{Esempio di applicazione: Le comunicazioni satellitari}
 \newline
+I segnali generati da una sorgente (che sia la voce catturata da un microfono, o una sequenza di bit prodotta da un computer a bordo di un satellite) escono sotto forma di impulsi elettrici a bassa frequenza e questo segnale, che contiene l'informazione vera e propria, viene definito segnale in banda base. I problemi di questo segnale vengono a galla quando decidiamo di trasmetterlo nell'aria o, come nel caso dei satelliti, nello spazio profondo. Per irradiare o ricevere un'onda elettromagnetica dallo spazio l'antenna deve avere una lunghezza fisica proporzionale alla lunghezza dell'onda (solitamente si utilizza l'antenna a 1/4 d'onda), per calcolare la lunghezza dell'onda si usa la formula:
+\begin{equation}
+    \lambda = \frac{c}{f}
+\end{equation}
+dove c è la velocità della luce (circa 300.000 km/s) e f la frequenza. 
+Per far capire bene il problema se noi provassimo a trasmettere un segnale a banda base con una frequenza di 3000 Hz, avremo una lunghezza d'onda pari a 100 km e di conseguenza ci servirebbe un'antenna, da costruire e mandare in orbita, pari a 25 km. 
+Un altro ostacolo riguarda l'ambiente in cui il segnale dovrà viaggiare, se non modulassimo il segnale, andremmo incontro a due problemi:
+\begin{itemize}
+    \item I segnali a bassa frequenza non hanno l'energia cinetica necessaria a superare gli strati superiori dell'atmosfera, in particolare la ionosfera (strato denso di particelle cariche ed elettroni liberi) che farebbe riflettere o assorbile completamente le frequenze. Per cui un satellite nello spazio che trasmette in banda base risulterebbe cieco. 
+    \item L'altro problema sono le interferenze, per comprendere queso fenomeno potremmo pensare a una stanza piena di persone che parlano con il medesimo tono di voce, un ascoltatore esterno non capirebbe il senso delle frasi ma riceverà solo un rumore indecifrabile. Per cui se tutti i satelliti, radio, telefoni utilizzassero il loro segnale puro, si troverebbero tutti ad occupare la stessa fascia di frequenza ed i segnali si sovrapporrebbero tra di loro distruggendosi. 
+\end{itemize}
+Per ovviare a queste problematiche è stata inventata la modulazione, noi prendiamo il nostro segnale modulante (che sarebbero i dati che si vogliono trasmettere a bassa frequenza) e lo "agganciamo" a un'onda portante (è un'onda sinusoidale generata artificialmente ad altissima frequenza), così facendo andremo a modificare uno dei parametri del nostro segnale (ampiezza, frequenza o fase). Per riprendere l'esempio di prima se noi avessimo un segnale a 3 kHz e lo modulassimo su una portante a 12 GHz, otterremmo una lunghezza d'onda pari a 0,025 m (2,5 cm) e di conseguenza la nostra antenna avrà una lunghezza di 0,625 cm a fronte dei 25 km che avremo se usassimo frequenze basse. 
+Con la modulazione si risolvono anche gli altri problemi, poichè le alte frequenze riescono a perforare i vari strati atmosferici indisturbate ( il fenomeno si chiama finestra radio) e ad arrivare sulla Terra. Risolvendo anche il problema dell'interferenza tramite l'FDM (Frequency Division Multiplexing), spostando i segnali a frequenze diverse. 
+
+
 Gli obiettivi principali di questa esperienza di laboratorio sono:
 \begin{itemize}
     \item Comprendere i principi fondamentali della modulazione in ampiezza.
