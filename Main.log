@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  10 JUN 2026 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  10 JUN 2026 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -83,6 +83,23 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count289
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+ (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
@@ -135,6 +152,13 @@ Package caption Info: Standard document class detected.
 \c@lotdepth=\count298
 \sf@top=\skip56
 \sf@bottom=\skip57
+) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count299
+\float@exts=\toks21
+\float@box=\box54
+\@float@everytoks=\toks22
+\@floatcapt=\box55
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.sty
 Package: transparent 2025-06-23 v1.6 Transparency with color stacks
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent-nometadata.sty
@@ -152,7 +176,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
+\@emptytoks=\toks23
 \ex@=\dimen170
 )) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -160,19 +184,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count299
+\inf@bad=\count300
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count300
-\leftroot@=\count301
+\uproot@=\count301
+\leftroot@=\count302
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count302
-\DOTSCASE@=\count303
+\classnum@=\count303
+\DOTSCASE@=\count304
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
+\Mathstrutbox@=\box56
+\strutbox@=\box57
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -180,44 +204,44 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen172
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count304
+\macc@depth=\count305
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count305
+\c@MaxMatrixCols=\count306
 \dotsspace@=\muskip17
-\c@parentequation=\count306
-\dspbrk@lvl=\count307
-\tag@help=\toks22
-\row@=\count308
-\column@=\count309
-\maxfields@=\count310
-\andhelp@=\toks23
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks24
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks25
 \eqnshift@=\dimen173
 \alignsep@=\dimen174
 \tagshift@=\dimen175
 \tagwidth@=\dimen176
 \totwidth@=\dimen177
 \lineht@=\dimen178
-\@envbody=\toks24
+\@envbody=\toks26
 \multlinegap=\skip59
 \multlinetaggap=\skip60
-\mathdisplay@stack=\toks25
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
 \thm@preskip=\skip61
 \thm@postskip=\skip62
 \thm@headsep=\skip63
-\dth@everypar=\toks31
+\dth@everypar=\toks33
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
@@ -233,18 +257,18 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count311
-\calc@Bcount=\count312
+\calc@Acount=\count312
+\calc@Bcount=\count313
 \calc@Adimen=\dimen179
 \calc@Bdimen=\dimen180
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count313
+\calc@Ccount=\count314
 \calc@Cskip=\skip66
 )
-\g_MT_multlinerow_int=\count314
+\g_MT_multlinerow_int=\count315
 \l_MT_multwidth_dim=\dimen181
 \origjot=\skip67
 \l_MT_shortvdotswithinadjustabove_dim=\dimen182
@@ -253,77 +277,70 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \l_MT_below_intertext_sep=\dimen185
 \l_MT_above_shortintertext_sep=\dimen186
 \l_MT_below_shortintertext_sep=\dimen187
-\xmathstrut@box=\box56
+\xmathstrut@box=\box58
 \xmathstrut@dim=\dimen188
 )
-\l_EQ_equationtype_int=\count315
-\l_EQ_alignmentmode_int=\count316
+\l_EQ_equationtype_int=\count316
+\l_EQ_alignmentmode_int=\count317
 \l_EQ_totalwidth_dim=\dimen189
 \l_EQ_displaywidth_dim=\dimen190
 \l_EQ_temp_linewidth_dim=\dimen191
 \l_EQ_linewidth_dim=\dimen192
 \EmphEqdelimitershortfall=\dimen193
-\EmphEqdelimiterfactor=\count317
+\EmphEqdelimiterfactor=\count318
 \g_EQ_toptag_height_dim=\dimen194
 \g_EQ_bottomtag_depth_dim=\dimen195
 \g_EQ_toprow_height_dim=\dimen196
 \g_EQ_bottomrow_depth_dim=\dimen197
 \g_EQ_widesttag_dim=\dimen198
-\EQ_mathdisplay_box=\box57
-\EQ_tag_box=\box58
-\g_EQ_temprow_int=\count318
+\EQ_mathdisplay_box=\box59
+\EQ_tag_box=\box60
+\g_EQ_temprow_int=\count319
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen199
-\ar@mcellbox=\box59
+\ar@mcellbox=\box61
 \extrarowheight=\dimen256
-\NC@list=\toks32
+\NC@list=\toks34
 \extratabsurround=\skip68
 \backup@length=\skip69
-\ar@cellbox=\box60
+\ar@cellbox=\box62
 )
 \TX@col@width=\dimen257
 \TX@old@table=\dimen258
 \TX@old@col=\dimen259
 \TX@target=\dimen260
 \TX@delta=\dimen261
-\TX@cols=\count319
-\TX@ftn=\toks33
+\TX@cols=\count320
+\TX@ftn=\toks35
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip70
 \LTright=\skip71
 \LTpre=\skip72
 \LTpost=\skip73
-\LTchunksize=\count320
+\LTchunksize=\count321
 \LTcapwidth=\dimen262
-\LT@head=\box61
-\LT@firsthead=\box62
-\LT@foot=\box63
-\LT@lastfoot=\box64
-\LT@gbox=\box65
-\LT@cols=\count321
-\LT@rows=\count322
-\c@LT@tables=\count323
-\c@LT@chunks=\count324
-\LT@p@ftn=\toks34
+\LT@head=\box63
+\LT@firsthead=\box64
+\LT@foot=\box65
+\LT@lastfoot=\box66
+\LT@gbox=\box67
+\LT@cols=\count322
+\LT@rows=\count323
+\c@LT@tables=\count324
+\c@LT@chunks=\count325
+\LT@p@ftn=\toks36
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
-\everycr=\toks35
+\everycr=\toks37
 \minrowclearance=\skip74
-\rownum=\count325
+\rownum=\count326
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count326
-\float@exts=\toks36
-\float@box=\box66
-\@float@everytoks=\toks37
-\@floatcapt=\box67
-) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+ (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks38
@@ -492,24 +509,7 @@ Package: thm-restate 2023/05/04 v0.76
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/thmtools\thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
 \thmt@style@headstyle=\toks42
-)) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-LaTeX Info: Redefining \color on input line 762.
- (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+)) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
  Excluding comment 'comment') (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -791,7 +791,8 @@ File: pgflibrarycurvilinear.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@circ@res@count=\count382
 ) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
 \pgfcirc@labelshift=\dimen341
-) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex)
+(C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
 \xs_counta=\count383
 \xs_countb=\count384
 )
@@ -899,24 +900,24 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ) (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count413
@@ -936,8 +937,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \it@ocap on input line 107.
-LaTeX Info: Redefining \it@ccap on input line 107.
+LaTeX Info: Redefining \it@ocap on input line 108.
+LaTeX Info: Redefining \it@ccap on input line 108.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -947,14 +948,14 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \[ on input line 107.
-LaTeX Info: Redefining \] on input line 107.
-Package hyperref Info: Link coloring ON on input line 107.
+LaTeX Info: Redefining \[ on input line 108.
+LaTeX Info: Redefining \] on input line 108.
+Package hyperref Info: Link coloring ON on input line 108.
  (Main.out) (Main.out)
 \@outlinefile=\write5
 \openout5 = `Main.out'.
 
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 107.
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 108.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.6).
 
@@ -993,7 +994,7 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (Configuration_files/title_page.tex
-<Images/logo_doppio.png, id=74, 119.2455pt x 28.6671pt>
+<Images/logo_doppio.png, id=78, 119.2455pt x 28.6671pt>
 File: Images/logo_doppio.png Graphic file (type png)
 <use Images/logo_doppio.png>
 Package pdftex.def Info: Images/logo_doppio.png  used on input line 5.
@@ -1052,50 +1053,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
-[3]) [4] (Chapters/Teoria1.tex [5] (Chapters/Teoria2.tex)) [6] (Chapters/Esperimento.tex) [7] (Chapters/Conclusioni.tex) [8]
+[3]) [4] (Chapters/Teoria1.tex [5] (Chapters/Teoria2.tex)) [6] (Chapters/Esperimento.tex
+<Figure/laboratorio/modulantePortante.png, id=152, 803.0pt x 481.8pt>
+File: Figure/laboratorio/modulantePortante.png Graphic file (type png)
+<use Figure/laboratorio/modulantePortante.png>
+Package pdftex.def Info: Figure/laboratorio/modulantePortante.png  used on input line 21.
+(pdftex.def)             Requested size: 386.95897pt x 232.18033pt.
+<Figure/laboratorio/Modulato.png, id=153, 803.0pt x 481.8pt>
+File: Figure/laboratorio/Modulato.png Graphic file (type png)
+<use Figure/laboratorio/Modulato.png>
+Package pdftex.def Info: Figure/laboratorio/Modulato.png  used on input line 38.
+(pdftex.def)             Requested size: 386.95897pt x 232.18033pt.
+ [7 <./Figure/laboratorio/modulantePortante.png (PNG copy)>]
+<Figure/laboratorio/FFTModulato3.png, id=167, 803.0pt x 481.8pt>
+File: Figure/laboratorio/FFTModulato3.png Graphic file (type png)
+<use Figure/laboratorio/FFTModulato3.png>
+Package pdftex.def Info: Figure/laboratorio/FFTModulato3.png  used on input line 64.
+(pdftex.def)             Requested size: 386.95897pt x 232.18033pt.
+ [8 <./Figure/laboratorio/Modulato.png (PNG copy)>]) [9 <./Figure/laboratorio/FFTModulato3.png (PNG copy)>] (Chapters/Conclusioni.tex) [10]
 No file Main.bbl.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 145.
+(hyperref)                removing `\\' on input line 146.
 
-<Figure/GenSeg.jpg, id=156, 777.90625pt x 356.33125pt>
+<Figure/GenSeg.jpg, id=192, 777.90625pt x 356.33125pt>
 File: Figure/GenSeg.jpg Graphic file (type jpg)
 <use Figure/GenSeg.jpg>
-Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 151.
+Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 152.
 (pdftex.def)             Requested size: 241.84843pt x 110.78233pt.
-<Figure/Oscilloscopio.jpg, id=157, 1505.625pt x 809.0225pt>
+<Figure/Oscilloscopio.jpg, id=193, 1505.625pt x 809.0225pt>
 File: Figure/Oscilloscopio.jpg Graphic file (type jpg)
 <use Figure/Oscilloscopio.jpg>
-Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 159.
+Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 160.
 (pdftex.def)             Requested size: 241.84843pt x 129.95238pt.
-<Figure/breadboard.png, id=158, 1557.82pt x 506.89375pt>
+<Figure/breadboard.png, id=194, 1557.82pt x 506.89375pt>
 File: Figure/breadboard.png Graphic file (type png)
 <use Figure/breadboard.png>
-Package pdftex.def Info: Figure/breadboard.png  used on input line 173.
+Package pdftex.def Info: Figure/breadboard.png  used on input line 174.
 (pdftex.def)             Requested size: 145.11053pt x 47.21178pt.
-<Figure/diodo.png, id=159, 803.0pt x 803.0pt>
+<Figure/diodo.png, id=195, 803.0pt x 803.0pt>
 File: Figure/diodo.png Graphic file (type png)
 <use Figure/diodo.png>
-Package pdftex.def Info: Figure/diodo.png  used on input line 181.
+Package pdftex.def Info: Figure/diodo.png  used on input line 182.
 (pdftex.def)             Requested size: 145.11053pt x 145.10963pt.
-<Figure/caviRossoNero.png, id=160, 1104.125pt x 1104.125pt>
+<Figure/caviRossoNero.png, id=196, 1104.125pt x 1104.125pt>
 File: Figure/caviRossoNero.png Graphic file (type png)
 <use Figure/caviRossoNero.png>
-Package pdftex.def Info: Figure/caviRossoNero.png  used on input line 195.
+Package pdftex.def Info: Figure/caviRossoNero.png  used on input line 196.
 (pdftex.def)             Requested size: 145.11053pt x 145.10811pt.
-<Figure/cavoBNC.png, id=161, 897.3525pt x 980.66376pt>
+<Figure/cavoBNC.png, id=197, 897.3525pt x 980.66376pt>
 File: Figure/cavoBNC.png Graphic file (type png)
 <use Figure/cavoBNC.png>
-Package pdftex.def Info: Figure/cavoBNC.png  used on input line 203.
+Package pdftex.def Info: Figure/cavoBNC.png  used on input line 204.
 (pdftex.def)             Requested size: 145.11053pt x 158.57037pt.
-[9
+[11
 
  <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg> <./Figure/breadboard.png> <./Figure/diodo.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 208.
+(hyperref)                removing `\\' on input line 209.
 
-[10 <./Figure/caviRossoNero.png> <./Figure/cavoBNC.png>]
+[12 <./Figure/caviRossoNero.png> <./Figure/cavoBNC.png>]
 
 Package caption Warning: Unused \captionsetup[table] on input line 20.
 See the caption package documentation for explanation.
@@ -1114,21 +1132,27 @@ L3 programming layer <2026-04-28>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.4641pt have occurred.
 
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 12475078E8C32E71BAB7267A888E21B8;3070.
+
+Package rerunfilecheck Warning: File `Main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Main.out':
+(rerunfilecheck)             Before: 94F586112F21C8F1D735D8218EB10C20;3325
+(rerunfilecheck)             After:  5CEC40BC9D8951CB326684CFF37959FD;3514.
  ) 
 Here is how much of TeX's memory you used:
- 63729 strings out of 467683
- 1627354 string characters out of 5414722
- 2481675 words of memory out of 5000000
- 91988 multiletter control sequences out of 15000+600000
+ 63785 strings out of 467683
+ 1628748 string characters out of 5414722
+ 2483674 words of memory out of 5000000
+ 92022 multiletter control sequences out of 15000+600000
  649279 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,19n,108p,880b,1124s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Main.pdf (10 pages, 1632391 bytes).
+Output written on Main.pdf (12 pages, 1785741 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

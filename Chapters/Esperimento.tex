@@ -2,4 +2,71 @@
 \label{sec:Esperimento}
 \thispagestyle{plain}
 
+\subsection{Generazione dei segnali e modulazione}
+Il primo passo dell'esperimento è stato quello di generare le forme d'onda dei segnali coinvolti: 
+\begin{itemize}
+    \item \textbf{Segnale modulante:} è stato generato un segnale sinusoidale a bassa frequenza (500 Hz) che rappresenta il segnale informativo che si desidera trasmettere.
+        \begin{equation}
+            m(t) = \cos(2\pi 500 t)
+        \end{equation}
+    \item \textbf{Segnale portante:} è stata generata un'onda sinusoidale ad alta frequenza (10 kHz) che funge da portante per la modulazione.
+        \begin{equation}
+            c(t) = \cos(2\pi 10000 t)
+        \end{equation}
+\end{itemize}
+A tal fine abbiamo utilizzato un generatore di generatore di segnali, impostando le frequenze e le ampiezze desiderate per ciascun segnale, ed in un primo momento abbiamo osservato le forme d'onda dei segnali modulante e portante separatamente utilizzando un oscilloscopio, per verificare che fossero correttamente generati e per analizzare le loro caratteristiche.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure/laboratorio/modulantePortante.png}
+    \caption{Forme d'onda del segnale modulante (sinusoidale a 500 Hz) in \textcolor{cyan}{azzurro} e del segnale portante (sinusoidale a 10 kHz) in \textcolor{orange}{giallo} visualizzate sull'oscilloscopio.}
+    \label{fig:Segnali}
+\end{figure}
+
+Successivamente, abbiamo proceduto alla modulazione del segnale portante utilizzando il segnale modulante. La modulazione è stata effettuata utilizzando un modulatore di ampiezza (AM), integrato nel generatore di segnali, che ha combinato i due segnali per produrre un segnale modulato in ampiezza seguendo la formula:
+\begin{equation}
+    s(t) = [1 + k_n \cdot m(t)] \cdot c(t)
+    \label{eq:ModulazioneAM}
+\end{equation}
+
+dove $s(t)$ è il segnale modulato, $m(t)$ è il segnale modulante, $c(t)$ è il segnale portante e $k_n$ è il coefficiente di modulazione che determina la profondità della modulazione.
+
+Abbiamo impostato $k_n$ a 0.85 (85\%) per ottenere una modulazione completa, senza introdurre distorsioni significative.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure/laboratorio/Modulato.png}
+    \caption{Forma d'onda del segnale modulato in ampiezza visualizzata sull'oscilloscopio. Si può osservare come l'ampiezza del segnale portante (10 kHz) varia in funzione del segnale modulante (500 Hz), creando un'onda modulata in ampiezza.}
+    \label{fig:SegnaleModulato}
+\end{figure}
+
+Sostituendo le espressioni per $m(t)$ e $c(t)$ (con $f_m=500\,$Hz e $f_c=10000\,$Hz) nella formula \ref{eq:ModulazioneAM} otteniamo:
+\begin{align}
+    s(t) &= [1 + k_n  \cos(2\pi f_m t)]\,\cos(2\pi f_c t) \\
+         &= \cos(2\pi f_c t) + k_n  \,\cos(2\pi f_m t)\cos(2\pi f_c t) \\
+         &= \cos(2\pi f_c t) + \frac{k_n}{2} \left[\cos\big(2\pi(f_c+f_m)t\big) + \cos\big(2\pi(f_c-f_m)t\big)\right].
+\end{align}
+
+Quindi il segnale modulato è composto dalla portante alla frequenza $f_c$ e da due bande laterali a $f_c\pm f_m$. Per i valori numerici usati nell'esperimento si ottiene:
+\begin{equation}
+    s(t)=\cos(2\pi 10000 t) + \frac{k_n}{2}\left[\cos(2\pi\,10500\,t)+\cos(2\pi\,9500\,t)\right].
+\end{equation}
+
+Calcolando la Trasformata di Fourier di $s(t)$, si ottiene:
+\begin{align}
+    S(f) &= \delta(f - f_c) + \frac{k_n}{2} [\delta(f - (f_c + f_m)) + \delta(f - (f_c - f_m))] \\
+         &= \delta(f - 10000) + \frac{k_n}{2} [\delta(f - 10500) + \delta(f - 9500)]
+\end{align}
+Individuando così tre picchi nello spettro del segnale modulato: uno alla frequenza della portante (10 kHz) e due alle frequenze delle bande laterali (9.5 kHz e 10.5 kHz), che rappresentano le frequenze del segnale modulante sottratte e aggiunte alla frequenza della portante.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure/laboratorio/FFTModulato3.png}
+    \caption{Spettro del segnale modulato in ampiezza ottenuto tramite FFT. Si evidenziano la portante a 10 kHz e le bande laterali a 9.5 kHz e 10.5 kHz.}
+    \label{fig:FFTModulato}
+\end{figure}
+
+Ciò che è stato precedentemente detto è stato confermato osservando lo spettro del segnale modulato tramite la funzione FFT presente sull'oscilloscopio, che ha mostrato chiaramente i tre picchi corrispondenti alla portante e alle bande laterali, confermando la corretta modulazione del segnale.
+
+\subsection{Demodulazione del segnale}
 \pagebreak
