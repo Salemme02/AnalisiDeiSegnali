@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  9 JUN 2026 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.6)  10 JUN 2026 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1033,69 +1033,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--45
 \openout6 = `Main.toc'.
 
  [2] (Chapters/Introduzione.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--18
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--18
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--18
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--18
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
-) [3] (Chapters/Teoria1.tex [4] (Chapters/Teoria2.tex)) [5] (Chapters/Esperimento.tex) [6] (Chapters/Conclusioni.tex) [7]
+[3]) [4] (Chapters/Teoria1.tex [5] (Chapters/Teoria2.tex)) [6] (Chapters/Esperimento.tex) [7] (Chapters/Conclusioni.tex) [8]
 No file Main.bbl.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 145.
 
-<Figure/GenSeg.jpg, id=150, 777.90625pt x 356.33125pt>
+<Figure/GenSeg.jpg, id=156, 777.90625pt x 356.33125pt>
 File: Figure/GenSeg.jpg Graphic file (type jpg)
 <use Figure/GenSeg.jpg>
 Package pdftex.def Info: Figure/GenSeg.jpg  used on input line 151.
 (pdftex.def)             Requested size: 241.84843pt x 110.78233pt.
-<Figure/Oscilloscopio.jpg, id=151, 1505.625pt x 809.0225pt>
+<Figure/Oscilloscopio.jpg, id=157, 1505.625pt x 809.0225pt>
 File: Figure/Oscilloscopio.jpg Graphic file (type jpg)
 <use Figure/Oscilloscopio.jpg>
 Package pdftex.def Info: Figure/Oscilloscopio.jpg  used on input line 159.
 (pdftex.def)             Requested size: 241.84843pt x 129.95238pt.
-<Figure/breadboard.png, id=152, 1557.82pt x 506.89375pt>
+<Figure/breadboard.png, id=158, 1557.82pt x 506.89375pt>
 File: Figure/breadboard.png Graphic file (type png)
 <use Figure/breadboard.png>
 Package pdftex.def Info: Figure/breadboard.png  used on input line 173.
 (pdftex.def)             Requested size: 145.11053pt x 47.21178pt.
-<Figure/diodo.png, id=153, 803.0pt x 803.0pt>
+<Figure/diodo.png, id=159, 803.0pt x 803.0pt>
 File: Figure/diodo.png Graphic file (type png)
 <use Figure/diodo.png>
 Package pdftex.def Info: Figure/diodo.png  used on input line 181.
 (pdftex.def)             Requested size: 145.11053pt x 145.10963pt.
-<Figure/caviRossoNero.png, id=154, 1104.125pt x 1104.125pt>
+<Figure/caviRossoNero.png, id=160, 1104.125pt x 1104.125pt>
 File: Figure/caviRossoNero.png Graphic file (type png)
 <use Figure/caviRossoNero.png>
 Package pdftex.def Info: Figure/caviRossoNero.png  used on input line 195.
 (pdftex.def)             Requested size: 145.11053pt x 145.10811pt.
-<Figure/cavoBNC.png, id=155, 897.3525pt x 980.66376pt>
+<Figure/cavoBNC.png, id=161, 897.3525pt x 980.66376pt>
 File: Figure/cavoBNC.png Graphic file (type png)
 <use Figure/cavoBNC.png>
 Package pdftex.def Info: Figure/cavoBNC.png  used on input line 203.
 (pdftex.def)             Requested size: 145.11053pt x 158.57037pt.
-[8
+[9
 
  <./Figure/GenSeg.jpg> <./Figure/Oscilloscopio.jpg> <./Figure/breadboard.png> <./Figure/diodo.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 208.
 
-[9 <./Figure/caviRossoNero.png> <./Figure/cavoBNC.png>]
+[10 <./Figure/caviRossoNero.png> <./Figure/cavoBNC.png>]
 
 Package caption Warning: Unused \captionsetup[table] on input line 20.
 See the caption package documentation for explanation.
@@ -1118,17 +1118,17 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 12475078E8C32E71BAB7267A888E21B8;3070.
  ) 
 Here is how much of TeX's memory you used:
- 63726 strings out of 467683
- 1627332 string characters out of 5414722
- 2481674 words of memory out of 5000000
+ 63729 strings out of 467683
+ 1627354 string characters out of 5414722
+ 2481675 words of memory out of 5000000
  91988 multiletter control sequences out of 15000+600000
  649279 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,19n,108p,880b,1080s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Main.pdf (9 pages, 1624347 bytes).
+ 98i,19n,108p,880b,1124s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc0900.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Main.pdf (10 pages, 1632391 bytes).
 PDF statistics:
- 623 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
  184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
