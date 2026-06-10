@@ -69,4 +69,32 @@ Individuando così tre picchi nello spettro del segnale modulato: uno alla frequ
 Ciò che è stato precedentemente detto è stato confermato osservando lo spettro del segnale modulato tramite la funzione FFT presente sull'oscilloscopio, che ha mostrato chiaramente i tre picchi corrispondenti alla portante e alle bande laterali, confermando la corretta modulazione del segnale.
 
 \subsection{Demodulazione del segnale}
+
+A questo punto il nostro generatore di segnali rappresenta il trasmettitore che invia il segnale modulato, mentre l'oscilloscopio rappresenta il ricevitore, il quale deve demodulare il segnale per poter accedere al segnale informativo originale. Per fare ciò, abbiamo prima di tutto fatto passare il segnale modulato attraverso un \textbf{diodo}, che agisce come un rivelatore di picco, permettendo di estrarre l'inviluppo del segnale modulato.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure/laboratorio/FFTDemodulato2.png}
+    \caption{Forma D'onda e Spettro del segnale dopo il passaggio attraverso il diodo.}
+    \label{fig:SegnaleDiodo}
+\end{figure}
+
+Come si può notare dalla figura \ref{fig:SegnaleDiodo}, dopo il passaggio attraverso il diodo, il segnale presenta un'ampiezza che varia in funzione del segnale modulante, ma nello spettro sono state introdotte delle repliche intorno a frequenze multiple della portante (10 kHz, 20 kHz, 30 kHz, ecc.) a causa della non linearità del diodo. 
+
+Per riottenere il segnale modulante orginale, è stato quindi necessario utilizzare un filtro che permettesse di mantenere solo le frequenze intorno a $f_m$, eliminando le componenti introdotte dalla portante.
+
+A tal fine abbiamo utilizzato un filtro \textbf{passa-banda} digitale, integrato nell'oscilloscopio, con frequenze limite pari a:
+\begin{itemize}
+    \item Frequenza inferiore : 250 Hz 
+    \item Frequenza superiore : 1000 Hz 
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure/laboratorio/DemodulatoFiltrato.png}
+    \caption{Segnale modulato in \textcolor{orange}{giallo}, segnale all'uscita del diodo in \textcolor{cyan}{azzurro} e segnale filtrato in \textcolor{violet}{viola}.}
+    \label{fig:SegnaleDemodulato}
+\end{figure}
+
+Dopo l'applicazione del filtro, come possiamo osservare nella figura \ref{fig:SegnaleDemodulato}, il segnale filtrato (in viola) mostra chiaramente la forma d'onda del segnale modulante originale (500 Hz), confermando che la demodulazione è stata eseguita correttamente e che siamo riusciti a recuperare il segnale informativo originale a partire dal segnale modulato.
 \pagebreak
