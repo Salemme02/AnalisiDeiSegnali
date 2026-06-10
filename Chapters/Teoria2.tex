@@ -1,8 +1,6 @@
 \thispagestyle{plain}
 \subsection{Modulazione AM e Demodulazione}
-\newline
-\newline
-Modulazione AM
+\subsubsection{Modulazione AM}
 Un segnale modulante, ha frequenze basse e non può essere trasmesso efficientemente da solo, ed è per questo motivo che viene "agganciato" a un segnale sinusoidale ad alta frequenza detto portante. La modulazione, quindi, modifica una delle caratteristiche della portante in funzione del messaggio a bassa frequenza. Le principali caratteristiche che si possono modificare sono:
 \begin{itemize}
   \item Modulazione Ampiezza (AM)
@@ -15,24 +13,23 @@ c(t) = A_c \cos(2\pi f_c t + \phi)
 \end{equation}
 Dove:
 \begin{itemize}
-  \item A_c= ampiezza della portante;
-  \item f_c= frequenza della portante;
-  \item phi= fase iniziale.
+  \item $A_c$= ampiezza della portante;
+  \item $f_c$= frequenza della portante;
+  \item $\phi$= fase iniziale.
 \end{itemize}
 La modulazione modifica uno di questi paramentri. Noi ci siamo occupati della modulazione AM, per cui andiamo a variare l'ampiezza della portante lasciando invariati frequenza e fase. Il segnale trasmesso assume la forma:
 \begin{equation}
-s(t) = A_c \left[1 + \mu \cos(2\pi f_m t)\right] \cos(2\pi f_c t)
+  s(t) = A_c \left[1 + \mu \cos(2\pi f_m t)\right] \cos(2\pi f_c t)
 \end{equation}
-Dove mu è l'indice di modulazione (parametro fondamentale poiché indica quanto il segnale modulante varia l'ampiezza della portante, la sua formula è m=\frac{A_m}{A_c}) e f_m, f_c sono rispettivamente la frequenza di modulazione e della portante. 
+Dove $\mu$ è l'indice di modulazione (parametro fondamentale poiché indica quanto il segnale modulante varia l'ampiezza della portante, la sua formula è $\mu=\frac{A_m}{A_c}$) e $f_m$, $f_c$ sono rispettivamente la frequenza di modulazione e della portante. 
 Se l'indice di modulazione:
 \begin{itemize}
-  \item m<1 avremo una modulazione corretta, il segnale AM segue perfettamente il segnale modulante e riceveremo l'informazione senza distorsioni;
-  \item m=1 massima modulazione possibile senza distorsioni;
-  \item m>1 il segnale modulante è troppo grande rispetto alla portante, l'inviluppo si incrocia e il ricevitore non riesce a ricostruire il messaggio, poiché si produrrebbero distorsioni, perdita di informazione.
+  \item $\mu<1$ avremo una modulazione corretta, il segnale AM segue perfettamente il segnale modulante e riceveremo l'informazione senza distorsioni;
+  \item $\mu=1$ massima modulazione possibile senza distorsioni;
+  \item $\mu>1$ il segnale modulante è troppo grande rispetto alla portante, l'inviluppo si incrocia e il ricevitore non riesce a ricostruire il messaggio, poiché si produrrebbero distorsioni, perdita di informazione.
 \end{itemize}
-\newline
-\newline
-Demodulazione
+
+\subsubsection{Demodulazione}
 La demodulazione è il processo che permette di recuperare l'informazione dal segnale AM ricevuto, lo facciamo tramite rivelatore d'inviluppo realizzato tramite:
 \begin{itemize}
   \item un diodo
