@@ -1,11 +1,11 @@
 \thispagestyle{plain}
 \subsection{Modulazione AM e Demodulazione}
 \subsubsection{Modulazione AM}
-Un segnale modulante, ha frequenze basse e non può essere trasmesso efficientemente da solo, ed è per questo motivo che viene "agganciato" a un segnale sinusoidale ad alta frequenza detto portante. La modulazione, quindi, modifica una delle caratteristiche della portante in funzione del messaggio a bassa frequenza. Le principali caratteristiche che si possono modificare sono:
+Un segnale modulante ha tipicamente frequenze basse e non può essere trasmesso efficacemente da solo, per questo motivo viene "agganciato" a un segnale sinusoidale ad alta frequenza detto portante. La modulazione, quindi, modifica una delle caratteristiche della portante in funzione del messaggio a bassa frequenza. Le principali tecniche di modulazione sono:
 \begin{itemize}
-  \item Modulazione Ampiezza (AM)
-  \item Modulazione Frequenza (FM)
-  \item Modulazione Fase (PM)
+  \item Modulazione di Ampiezza (AM)
+  \item Modulazione di Frequenza (FM)
+  \item Modulazione di Fase (PM)
 \end{itemize}
 Un segnale portante sinusoidale può essere scritto come:
 \begin{equation}
@@ -17,12 +17,15 @@ Dove:
   \item $f_c$= frequenza della portante;
   \item $\phi$= fase iniziale.
 \end{itemize}
-La modulazione modifica uno di questi paramentri. Noi ci siamo occupati della modulazione AM, per cui andiamo a variare l'ampiezza della portante lasciando invariati frequenza e fase. Il segnale trasmesso assume la forma:
+La modulazione modifica uno di questi parametri. Nel caso della modulazione AM, per cui andiamo a variare l'ampiezza della portante lasciando invariati frequenza e fase, il segnale trasmesso assume la forma:
 \begin{equation}
-  s(t) = A_c \left[1 + \mu \cos(2\pi f_m t)\right] \cos(2\pi f_c t)
+  s(t) = \left[A_c + m(t)\right] \cos(2\pi f_c t)
 \end{equation}
-Dove $\mu$ è l'indice di modulazione (parametro fondamentale poiché indica quanto il segnale modulante varia l'ampiezza della portante, la sua formula è $\mu=\frac{A_m}{A_c}$) e $f_m$, $f_c$ sono rispettivamente la frequenza di modulazione e della portante. 
-Se l'indice di modulazione:
+Dove $m(t)$ è il segnale che contiene l'informazione da trasmettere (il messaggio). L'indice di modulazione $\mu$ indica quanto il messaggio influisce sulla portante, e si calcola semplicemente dividendo il valore massimo (il picco) del messaggio per l'ampiezza della portante stessa:
+\begin{equation}
+\mu = \frac{\max |m(t)|}{A_c}
+\end{equation}
+A seconda del valore assunto dall'indice di modulazione si distinguono tre casi:
 \begin{itemize}
   \item $\mu<1$ avremo una modulazione corretta, il segnale AM segue perfettamente il segnale modulante e riceveremo l'informazione senza distorsioni;
   \item $\mu=1$ massima modulazione possibile senza distorsioni;
@@ -30,12 +33,36 @@ Se l'indice di modulazione:
 \end{itemize}
 
 \subsubsection{Demodulazione}
-La demodulazione è il processo che permette di recuperare l'informazione dal segnale AM ricevuto, lo facciamo tramite rivelatore d'inviluppo realizzato tramite:
+La demodulazione è il processo inverso che permette di estrarre e recuperare l'informazione dal segnale AM ricevuto, questa operazione viene eseguita tramite rivelatore d'inviluppo, circuito tipicamente composto da:
 \begin{itemize}
-  \item un diodo
+  \item un diodo, effettua un raddrizzamento a semionda lasciando passare esclusivamente le semionde positive, bloccando quelle negative. 
   \item un filtro RC
 \end{itemize}
 
 
 
 \subsection{Filtri}
+I filtri sono circuiti elettrici con lo scopo di selezionare o modificare dei segnali in base alla loro frequenza, permettono il passaggio delle frequenze desiderate all'interno della loro banda passante e al tempo stesso bloccano o attenuano tutte le frequenze indesiderate.
+In base al comportamento in frequenza e a quali componenti dello spettro lasciano passare, i filtri vengono classificati in: passa-basso, passa-alto e passa-banda.
+Il filtro passa-basso consente il passaggio dei segnali a bassa frequenza, attenuando quelli a frequenze più alte. Il circuito più semplice è costituito da un resistore $R$ in serie a un condensatore $C$, dove la tensione di uscita $v_{out}(t)$ viene prelevata ai capi del condensatore.
+Il filtro passa-alto lascia transitare i segnali ad alta frequenza e anche in questo caso il circuito sarà composto da un resistore $R$ e da un condensatore $C$, ma con una disposizione invertita rispetto al filtro passa-basso.
+Il filtro passa-banda lascia passare solo le frequenze comprese in un determinato intervallo, chiamato banda passante, attenuando sia le frequenze troppo basse che quello troppo alte. Questo tipo di fltro ha tre caratteristiche principali che ne determinano il comportamento:
+\begin{itemize}
+  \item \textbf{Frequenza centrale ($f_0$):} è la frequenza su cui il filtro è centrato e dove presenta la massima trasmissione.
+  \item \textbf{Larghezza di banda ($B$):} è l'ampiezza dell'intervallo di frequenze (compreso tra la frequenza di taglio inferiore $f_1$ e quella superiore $f_2$) che riesce a passare senza subire un'attenuazione. Per non tagliare il segnale AM e perdere l'informazione, la banda del filtro deve essere larga almeno il doppio della frequenza del messaggio ($B \ge 2f_m$).
+  \item \textbf{Frequenze di taglio ($f_1$ e $f_2$):} sono i due confini del filtro, misurati nei punti in cui il segnale subisce un'attenuazione rispetto al valore massimo. La frequenza di taglio inferiore ($f_1$) indica il limite sotto il quale il segnale viene bloccato, mentre la frequenza di taglio superiore ($f_2$) indica il limite sopra il quale ricomincia l'attenuazione.
+\end{itemize}
+Un filtro passa-banda può essere pensato come un filtro passa-basso che è stato traslato più in alto in frequenza. Questa operazione ci permette di descrivere il filtro sia del dominio del tempo con la funzione $h(t)$, sia nel dominio della frequenza $H(f)$:
+
+\begin{equation}
+h(t) = 2B \text{sinc}(B t) \cdot \cos(2\pi f_0 t)
+\end{equation}
+
+\begin{equation}
+|H(f)| = \text{rect}\left(\frac{f - f_0}{B}\right) + \text{rect}\left(\frac{f + f_0}{B}\right)
+\end{equation}
+
+
+
+
+
