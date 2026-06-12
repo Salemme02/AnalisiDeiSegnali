@@ -36,7 +36,7 @@ A seconda del valore assunto dall'indice di modulazione si distinguono tre casi:
 La demodulazione è il processo inverso che permette di estrarre e recuperare l'informazione dal segnale AM ricevuto, questa operazione viene eseguita tramite rivelatore d'inviluppo, circuito tipicamente composto da:
 \begin{itemize}
   \item un diodo, effettua un raddrizzamento a semionda lasciando passare esclusivamente le semionde positive, bloccando quelle negative. 
-  \item un filtro RC
+  \item un filtro passa-basso o passa-banda.
 \end{itemize}
 
 
@@ -52,7 +52,7 @@ Il filtro passa-banda lascia passare solo le frequenze comprese in un determinat
   \item \textbf{Larghezza di banda ($B$):} è l'ampiezza dell'intervallo di frequenze (compreso tra la frequenza di taglio inferiore $f_1$ e quella superiore $f_2$) che riesce a passare senza subire un'attenuazione. Per non tagliare il segnale AM e perdere l'informazione, la banda del filtro deve essere larga almeno il doppio della frequenza del messaggio ($B \ge 2f_m$).
   \item \textbf{Frequenze di taglio ($f_1$ e $f_2$):} sono i due confini del filtro, misurati nei punti in cui il segnale subisce un'attenuazione rispetto al valore massimo. La frequenza di taglio inferiore ($f_1$) indica il limite sotto il quale il segnale viene bloccato, mentre la frequenza di taglio superiore ($f_2$) indica il limite sopra il quale ricomincia l'attenuazione.
 \end{itemize}
-Un filtro passa-banda può essere pensato come un filtro passa-basso che è stato traslato più in alto in frequenza. Questa operazione ci permette di descrivere il filtro sia del dominio del tempo con la funzione $h(t)$, sia nel dominio della frequenza $H(f)$:
+Un filtro passa-banda può essere pensato come un filtro passa-basso modulato. Questa operazione ci permette di descrivere il filtro sia del dominio del tempo con la funzione $h(t)$, sia nel dominio della frequenza $H(f)$:
 
 \begin{equation}
 h(t) = 2B \text{sinc}(B t) \cdot \cos(2\pi f_0 t)
